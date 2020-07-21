@@ -18,6 +18,8 @@ body{
   display: flex;
   justify-content: center;
   align-items: center; 
+  text-align: center;
+
 }
 
 
@@ -31,6 +33,14 @@ h2 {
   font-size: 1.5rem;
   font-weight: normal;
   color: var(--color-secondary);
+  padding-bottom: 1em;
 }
+
+p{
+  font-size: 0.8rem; 
+  color: var(--color-secondary);
+}
+
+
 
 
