@@ -36,6 +36,7 @@ body {
   flex-direction: column;
   justify-content: center;
   user-select: none;
+  animation: fade-in 0.8s ease-out;
 }
 
 h1 {
@@ -122,5 +123,15 @@ svg:hover {
   }
   p {
     font-size: 1rem;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    left: 6rem;
+  }
+  100% {
+    opacity: 1;
   }
 }
