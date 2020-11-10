@@ -6,8 +6,7 @@
   --color-1: #ffffff;
   --color-2: #afafaf;
   --color-3: #505050;
-
-  --container-width: 700px;
+  --container-width: 600px;
 }
 
 * {
@@ -17,10 +16,21 @@
   padding: 0 auto;
 }
 
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+  cursor: grab;
+  height: 100vh;
+  z-index: -10;
+}
+
 body {
   background-color: var(--background);
-  width: 100vh;
+  left: 8rem;
   height: 100vh;
+  position: absolute;
   display: flex;
   gap: 2rem;
   flex-direction: column;
@@ -29,27 +39,27 @@ body {
 }
 
 h1 {
-  font-size: 3.2rem;
+  font-size: 3rem;
   font-weight: bold;
   color: var(--color-1);
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   font-weight: bold;
   color: var(--color-3);
   padding-bottom: 1em;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 162%;
   color: var(--color-1);
 }
 
 p.quote {
   font-family: 'Playfair Display', serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 1rem 0;
   color: var(--color-2);
 }

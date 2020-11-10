@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./style.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-72198189-1"></script>
+    <!-- Link to the last version of BabylonJS loaders to enable loading filetypes such as .gltf -->
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
     <script>
       window.dataLayer = window.dataLayer || []
       function gtag() {
@@ -15,6 +17,7 @@
       gtag('js', new Date())
       gtag('config', 'UA-72198189-1')
     </script>
+    <script src="https://preview.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
   </head>
   <body>
     <div class="titles">
@@ -69,6 +72,7 @@
         </svg>
       </a>
     </div>
+    <canvas id="renderCanvas"></canvas>
     <script src="./script.js"></script>
   </body>
 </html>
