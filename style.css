@@ -1,7 +1,6 @@
 @font-face {
   font-family: Apercu;
   src: url('./assets/Apercu.ttf') format('truetype');
-  font-display: swap; /* auto, block, swap, fallback, optional */
 }
 
 :root {
@@ -39,7 +38,7 @@ body {
   flex-direction: column;
   justify-content: center;
   user-select: none;
-  animation: fade-in var(--fade-time-1) ease-out;
+  animation: fade-in 0.8s ease-out;
 }
 
 h1 {
@@ -129,7 +128,7 @@ svg:hover {
   }
 }
 
-@keyframes fade-in {
+@keyframes fade-in-main {
   0% {
     opacity: 0;
     left: 6rem;
