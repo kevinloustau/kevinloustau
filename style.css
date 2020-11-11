@@ -118,10 +118,6 @@ svg:hover {
     left: 0;
   }
 
-  canvas {
-    display: none;
-  }
-
   h1 {
     font-size: 1.8rem;
   }
@@ -130,6 +126,9 @@ svg:hover {
   }
   p {
     font-size: 1rem;
+  }
+  p.quote {
+    font-size: 0.9rem;
   }
 }
 
