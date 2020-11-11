@@ -55,7 +55,7 @@ h2 {
 }
 
 p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 162%;
   color: var(--color-1);
 }
@@ -128,7 +128,7 @@ svg:hover {
   }
 }
 
-@keyframes fade-in-main {
+@keyframes fade-in {
   0% {
     opacity: 0;
     left: 6rem;
