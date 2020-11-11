@@ -5,22 +5,22 @@ var createScene = function () {
   var scene = new BABYLON.Scene(engine)
   scene.clearColor = BABYLON.Color3.Black()
   var camera = new BABYLON.FreeCamera('camera1', new BABYLON.Vector3(-2, 5, -10), scene)
-  camera.setTarget(BABYLON.Vector3.Zero())
+  camera.setTarget(new BABYLON.Vector3(0, 2, 0))
   camera.attachControl(canvas, false)
   var light = new BABYLON.HemisphericLight('light1', new BABYLON.Vector3(-2, 1, 0), scene)
-  var sphere = BABYLON.Mesh.CreateSphere('sphere1', 16, 2, scene, false, BABYLON.Mesh.FRONTSIDE)
-  sphere.position.y = 1
-  sphere.position.x = 4
-  var ground = BABYLON.Mesh.CreateGround('ground1', 6, 6, 2, scene, false)
-  ground.position.x = 4
+  light.intensity = 1
   return scene
 }
 
 var scene = createScene()
 BABYLON.SceneLoader.ShowLoadingScreen = false
-BABYLON.SceneLoader.AppendAsync('./assets/', 'test.glb', scene).then(function (meshes) {
-  let mesh = meshes[0]
+// BABYLON.SceneLoader.AppendAsync('./assets/', 'test.glb', scene).then(function (meshes) {})
+
+BABYLON.SceneLoader.ImportMesh('', './assets/', 'test.glb', scene, function (meshes) {
+  const mesh = meshes[0]
+  mesh.position.x = 4
   console.log(mesh)
+  mesh.scaling = new BABYLON.Vector3(2.5, 2.5, 2.5)
 })
 
 engine.runRenderLoop(function () {
