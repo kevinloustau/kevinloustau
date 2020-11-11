@@ -1,5 +1,8 @@
-@import url('https://cdn.jsdelivr.net/npm/apercu-font@1.0.0/Apercu.ttf');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@font-face {
+  font-family: Apercu;
+  src: url('./assets/Apercu.ttf') format('truetype');
+  font-display: swap; /* auto, block, swap, fallback, optional */
+}
 
 :root {
   --background: #0d0d0d;
@@ -36,7 +39,7 @@ body {
   flex-direction: column;
   justify-content: center;
   user-select: none;
-  animation: fade-in 0.8s ease-out;
+  animation: fade-in var(--fade-time-1) ease-out;
 }
 
 h1 {
