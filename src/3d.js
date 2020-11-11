@@ -16,7 +16,7 @@ var shadowGenerator = new BABYLON.ShadowGenerator(1024, light2)
 
 BABYLON.SceneLoader.ShowLoadingScreen = false
 
-BABYLON.SceneLoader.ImportMesh('', '/public/assets/', 'test.glb', scene, (meshes) => {
+BABYLON.SceneLoader.ImportMesh('', '${window.location.origin}/public/assets', 'test.glb', scene, (meshes) => {
   const mesh = meshes[0]
   mesh.position.x = 4
   mesh.scaling = new BABYLON.Vector3(2.5, 2.5, 2.5)
