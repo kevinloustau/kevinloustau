@@ -115,6 +115,11 @@ svg:hover {
     padding: 1rem;
     width: 100%;
     height: 100%;
+    left: 0;
+  }
+
+  canvas {
+    display: none;
   }
 
   h1 {
