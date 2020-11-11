@@ -1,6 +1,6 @@
 @font-face {
   font-family: Apercu;
-  src: url('./assets/Apercu.ttf') format('truetype');
+  src: url('./public/assets/Apercu.ttf') format('truetype');
 }
 
 :root {
